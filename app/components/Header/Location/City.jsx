@@ -4,7 +4,6 @@ const City = () => {
   return (
     <Comfortaa
       style={{
-        color: '#fff',
         paddingRight: 4,
       }}
     >

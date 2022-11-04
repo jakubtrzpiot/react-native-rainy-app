@@ -6,7 +6,9 @@ const Comfortaa = ({ style, children }) => {
     Comfortaa: require('../../assets/fonts/Comfortaa-Bold.ttf'),
   });
   return (
-    <Text style={{ fontFamily: 'Comfortaa', fontSize: 18, ...style }}>
+    <Text
+      style={{ fontFamily: 'Comfortaa', fontSize: 18, color: '#fff', ...style }}
+    >
       {children}
     </Text>
   );

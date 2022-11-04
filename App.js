@@ -1,11 +1,14 @@
 import { useEffect, useCallback } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Constants from 'expo-constants';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 
 import Header from './app/components/Header';
-import Constants from 'expo-constants';
+import Weather from './app/components/Weather';
+import WeatherExtended from './app/components/WeatherExtended';
+import WeatherChart from './app/components/WeatherChart';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -35,6 +38,9 @@ export default function App() {
     <View style={styles.container} onLayout={onLayoutRootView}>
       <StatusBar />
       <Header />
+      <Weather />
+      <WeatherExtended />
+      <WeatherChart />
     </View>
   );
 }

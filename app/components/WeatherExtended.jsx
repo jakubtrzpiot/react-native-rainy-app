@@ -16,10 +16,10 @@ const WeatherExtended = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
+    paddingHorizontal: 12,
     alignItems: 'center',
-    paddingHorizontal: 56,
-    paddingVertical: 28,
+    paddingBottom: 60,
   },
 });
 
